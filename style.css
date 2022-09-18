@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    background-color: rgb(41, 64, 156);
+}
+
+.pontuacao{
+    display: none;
+    background-color: rgb(41, 64, 156);
+    justify-content: center;
+}
+.quiz{
+    display: flex;
+    padding-top: 5vh;
+    align-items: center;
+    flex-direction: column;
+    height: 120vh;
+    background-color: rgb(33, 33, 33);
+}
+
+.question{
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15vh;
+}
+
+.respostas{
+    display: flex;
+}
+
+
+button{
+    color: black;
+    font-weight: 700;
+    margin-top: 3vh;
+}
+
+@media (max-width: 500px) {
+
+    .quiz{
+        height: 220vh;
+    }
+    button{
+        width: 100px;
+        height: 60px;
+        margin-left: 35vw;
+    }
+    .question{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 35vh;
+    }
+    
+}
